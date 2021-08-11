@@ -10,4 +10,4 @@ mix.sass('src/sass/style.scss', 'public/css');
 mix.copy('src/index.html', 'public/index.html')
 
 /* Imagens */
-mix.copy('src/img/*', 'public/img/');
+// mix.copy('src/img/*', 'public/img/');

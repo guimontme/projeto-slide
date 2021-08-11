@@ -1,0 +1,13 @@
+body {
+  background: lighten(rgb(238, 238, 189), 0.8);
+
+  h1{
+    font-size: 2rem;
+    margin-left: 16px;
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+  }
+}
