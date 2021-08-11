@@ -1,15 +1,14 @@
 # Projeto Slide
 
-Primeiros comandos:
+Para instalar:
 ```	shell
-$ yarn
-$ yarn dev
+yarn
 ```
-Para rodar o servidor:
+Para rodar o watch:
 ```	shell
-$ yarn dev
+yarn dev
 ```
 Para enviar para produção:
 ```	shell
-$ yarn prod
+yarn prod
 ```
