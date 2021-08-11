@@ -1,6 +1,6 @@
 .slide-wrapper {
-  width: 80vw;
-  max-width: 800px;
+  // width: 80vw;
+  // max-width: 800px;
   overflow: hidden;
 
   .slide {
@@ -12,6 +12,5 @@
       max-width: 800px;
       margin: 0 20px;
     }
-    transform: translate3d(0px, 0px, 0px);
   }
 }
