@@ -7,8 +7,7 @@ export default class Slide {
 
   onStart(event) {
     event.preventDefault();
-    this.dist.startX = event.clientX;
-    this.wrapper.addEventListener('this.dist.startX', this.dist.startX);
+    this.wrapper.addEventListener('onmove', this.onMove);
     console.log(event);
   }
 
