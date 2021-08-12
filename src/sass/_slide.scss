@@ -1,12 +1,10 @@
 /* Slide */
 .slide-wrapper {
-  // width: 80vw;
-  // max-width: 800px;
   overflow: hidden;
 
   .slide {
     display: flex;
-    padding: 10px;
+    padding: 20px;
 
     li {
       flex-shrink: 0;
@@ -16,6 +14,8 @@
       opacity: 0.8;
       transform: scale(.8);
       filter: grayscale(.8) blur(5px);
+      border-radius: 4px;
+      overflow: hidden;
       transition: .4s;
     }
 
@@ -25,14 +25,15 @@
       transform: scale(1);
       box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.8);
     }
-    // transform: translate3d(-1259px, 0px, 0px);
   }
 }
 
+/* .arrow-nav */
 .arrow-nav {
   margin: 20px auto;
   display: flex;
   justify-content: space-around;
+
   button {
     cursor: pointer;
     border: none;
@@ -42,22 +43,24 @@
     width: 30px;
     height: 30px;
     overflow: hidden;
-    // text-indent: 30px;
     border-radius: 50%;
 
     span {
       display: none !important;
     }
-    &.prev::before {
+
+    &.prev::before{
       content: "➤";
       display: block;
       transform: rotate(180deg);
       margin-right: 2px;
     }
+
     &.next::after {
       content: "➤";
       margin-left: 2px;
     }
+
     &:active, &:hover {
       background: darken(#fb5, 20);
     }
@@ -65,12 +68,15 @@
   }
 }
 
+/* Controles Padrões caso ativado */
 ul[data-control='slide'] {
   margin: 20px auto;
   display: flex;
   justify-content: center;
-  gap: 0.5em;
+
   li {
+    margin: 0 5px;
+
     a {
       display: block;
       width: 12px;
@@ -80,24 +86,28 @@ ul[data-control='slide'] {
       text-indent: 20px;
       border-radius: 50%;
     }
+
     &.active a, & a:hover {
       background: darken(#fb5, 20);
     }
   }
 }
 
+/* Custom controls */
 ul.custom-controls {
   display: flex;
   margin: 20px auto;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+
   li {
+    cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
     opacity: .8;
+    margin: 0 3px;
     filter: grayscale(0.8);
     transform: scale(.8);
     transition: .3s;
