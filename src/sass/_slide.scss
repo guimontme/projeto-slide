@@ -30,11 +30,9 @@
 }
 
 .arrow-nav {
-  width: 80vw;
-  max-width: 800px;
-  margin: 16px auto;
+  margin: 20px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   button {
     cursor: pointer;
     border: none;
@@ -68,8 +66,6 @@
 }
 
 ul[data-control='slide'] {
-  width: 80vw;
-  max-width: 800px;
   margin: 20px auto;
   display: flex;
   justify-content: center;
@@ -86,6 +82,30 @@ ul[data-control='slide'] {
     }
     &.active a, & a:hover {
       background: darken(#fb5, 20);
+    }
+  }
+}
+
+ul.custom-controls {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  li {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: .8;
+    filter: grayscale(0.8);
+    transform: scale(.8);
+    transition: .3s;
+
+    &.active {
+      opacity: 1;
+      filter: none;
+      transform: scale(1);
     }
   }
 }
