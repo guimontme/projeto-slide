@@ -27,3 +27,36 @@
     // transform: translate3d(-1259px, 0px, 0px);
   }
 }
+
+.arrow-nav {
+  width: 80vw;
+  max-width: 800px;
+  margin: 16px auto;
+  display: flex;
+  justify-content: space-between;
+  button {
+    cursor: pointer;
+    border: none;
+    background: orange;
+    color: #fff;
+    padding: 4px 5px;
+    border-radius: 50%;
+    span {
+      display: none !important;
+    }
+    &.prev::before {
+      content: "➤";
+      display: inline-block;
+      transform: rotate(180deg);
+      margin-right: 2px;
+    }
+    &.next::after {
+      content: "➤";
+      margin-left: 2px;
+    }
+    &:active {
+      background: darkorange;
+    }
+
+  }
+}
