@@ -160,7 +160,9 @@ export class SlideNav extends Slide {
 
   addArrowsEvents() {
     this.prevElement.addEventListener('click', this.activePrevSlide);
+    this.prevElement.addEventListener('touchstart', this.activePrevSlide);
     this.nextElement.addEventListener('click', this.activeNextSlide);
+    this.nextElement.addEventListener('touchstart', this.activeNextSlide);
   }
 
 }
